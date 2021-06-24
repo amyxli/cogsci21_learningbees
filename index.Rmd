@@ -1,0 +1,25 @@
+---
+title: 'Estimating power in linear and generalized linear mixed models: an open introduction
+  and tutorial in R.'
+author: "Kumle, L., Vo, M. L-H., & Draschkow, D. (in preparation)"
+---
+
+### Notebooks and Supplemental Material
+
+```{r echo=FALSE, results='asis'}
+rmd <- Sys.glob("*.Rmd")
+rmd <- rmd[rmd != "index.Rmd"]
+html <- sub(".Rmd", ".html", rmd)
+lines <- lapply(rmd, readLines)
+yaml <- lapply(lines, rmarkdown:::parse_yaml_front_matter)
+cat("<ul>")
+for (i in seq_along(rmd)) {
+  cat(paste0("<li><a href='", html[i], "'>", yaml[[i]]$title, "</a><br/>",
+             "<code>", rmd[i], "</code>", "</li>"))
+}
+cat("</ul>")
+```
+
+
+
+See the [GitHub repository](https://github.com/lkumle/power_notebooks) for the source and [mixedpower](https://github.com/DejanDraschkow/mixedpower) for more information. 
