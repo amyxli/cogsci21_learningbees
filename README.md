@@ -1,4 +1,3 @@
-Repo for poster at CDS2019 Louisville – "Expecting the unexpected: Children’s over-exploration facilitates adaptation to a changing world".  
-
+Repo for poster at CogSci 2021 "Can losses attenuate learning traps?", with Rich M. Gureckis and Brett K. Hayes.
 
 
